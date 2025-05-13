@@ -1,0 +1,54 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.env
+*.egg-info/
+
+# === Java ===
+*.class
+*.jar
+*.war
+*.ear
+target/
+bin/
+build/
+
+# === C / C++ ===
+*.o
+*.out
+*.exe
+*.a
+*.so
+*.obj
+*.dll
+*.dSYM/
+*.log
+
+# === VSCode / IDEs ===
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# === Docker / Sistema ===
+.cache/
+.config/
+.local/
+*.swp
+*.log
+*.bak
+*~
+.DS_Store
+Thumbs.db
+
+# === Git / Segurança ===
+*.pem
+*.key
+*.crt
+*.secret
+*.env

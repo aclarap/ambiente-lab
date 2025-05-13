@@ -4,8 +4,10 @@ REM Script para iniciar o ambiente Docker com volume montado e porta 8080 expost
 setlocal
 
 REM Caminho local da pasta de projetos
-set "HOST_DIR=C:\lab-aluno"  REM Altere para o caminho desejado
-set "HOST_DIR=%HOST_DIR:\=/%"  REM Converte para sintaxe Docker
+REM Altere para o caminho desejado
+set "HOST_DIR=C:\lab-aluno"  
+REM Converte para sintaxe Docker
+set "HOST_DIR=%HOST_DIR:\=/%"  
 
 REM Nome da imagem e container
 set "IMAGE_NAME=ambiente-lab"
