@@ -1,0 +1,33 @@
+2025-05-11 23:22:23.821 [info] 
+
+
+
+
+2025-05-11 23:22:23.835 [info] Extension host agent started.
+2025-05-11 23:22:23.885 [info] Started initializing default profile extensions in extensions installation folder. file:///home/aluno/.local/share/code-server/extensions
+2025-05-11 23:22:23.913 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/aluno/.local/share/code-server/extensions
+2025-05-11 23:22:26.036 [info] [172.17.0.1][10607294][ManagementConnection] New connection established.
+2025-05-11 23:22:26.806 [info] [172.17.0.1][f84adbcf][ExtensionHostConnection] New connection established.
+2025-05-11 23:22:26.917 [info] [172.17.0.1][f84adbcf][ExtensionHostConnection] <55> Launched Extension Host Process.
+2025-05-11 23:23:23.664 [info] [172.17.0.1][10607294][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-05-11 23:23:23.735 [info] [172.17.0.1][f84adbcf][ExtensionHostConnection] <55> Extension Host Process exited with code: 0, signal: null.
+2025-05-11 23:23:24.790 [info] [172.17.0.1][dbb4b05e][ManagementConnection] New connection established.
+2025-05-11 23:23:25.412 [info] [172.17.0.1][a970cca5][ExtensionHostConnection] New connection established.
+2025-05-11 23:23:25.417 [info] [172.17.0.1][a970cca5][ExtensionHostConnection] <162> Launched Extension Host Process.
+2025-05-11 23:43:54.589 [info] Getting Manifest... esbenp.prettier-vscode
+2025-05-11 23:43:56.012 [info] Installing extension: esbenp.prettier-vscode {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/aluno/.local/share/code-server/extensions/extensions.json","external":"file:///home/aluno/.local/share/code-server/extensions/extensions.json","path":"/home/aluno/.local/share/code-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.99.3","date":"2025-04-24T19:29:01.118Z"}}
+2025-05-11 23:43:59.780 [error] Could not load vsce-sign module Cannot find package '@vscode/vsce-sign' imported from /usr/lib/code-server/lib/vscode/out/server-main.js
+2025-05-11 23:43:59.780 [info] Extension signature verification is not done: esbenp.prettier-vscode
+2025-05-11 23:43:59.901 [info] Extracted extension to file:///home/aluno/.local/share/code-server/extensions/esbenp.prettier-vscode-11.0.0-universal: esbenp.prettier-vscode
+2025-05-11 23:43:59.910 [info] Renamed to /home/aluno/.local/share/code-server/extensions/esbenp.prettier-vscode-11.0.0-universal
+2025-05-11 23:43:59.925 [info] Extension installed successfully: esbenp.prettier-vscode file:///home/aluno/.local/share/code-server/extensions/extensions.json
+2025-05-11 23:44:27.396 [info] Getting Manifest... vscjava.vscode-maven
+2025-05-11 23:44:28.842 [info] Installing extension: vscjava.vscode-maven {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/aluno/.local/share/code-server/extensions/extensions.json","external":"file:///home/aluno/.local/share/code-server/extensions/extensions.json","path":"/home/aluno/.local/share/code-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.99.3","date":"2025-04-24T19:29:01.118Z"}}
+2025-05-11 23:44:36.487 [error] Could not load vsce-sign module Cannot find package '@vscode/vsce-sign' imported from /usr/lib/code-server/lib/vscode/out/server-main.js
+2025-05-11 23:44:36.487 [info] Extension signature verification is not done: vscjava.vscode-maven
+2025-05-11 23:44:36.710 [info] Extracted extension to file:///home/aluno/.local/share/code-server/extensions/vscjava.vscode-maven-0.44.0-universal: vscjava.vscode-maven
+2025-05-11 23:44:36.759 [info] Renamed to /home/aluno/.local/share/code-server/extensions/vscjava.vscode-maven-0.44.0-universal
+2025-05-11 23:44:36.773 [info] Extension installed successfully: vscjava.vscode-maven file:///home/aluno/.local/share/code-server/extensions/extensions.json
+2025-05-12 00:27:40.045 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2025-05-12 01:20:38.444 [info] [172.17.0.1][dbb4b05e][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-05-12 01:20:38.800 [info] [172.17.0.1][a970cca5][ExtensionHostConnection] <162> Extension Host Process exited with code: 0, signal: null.

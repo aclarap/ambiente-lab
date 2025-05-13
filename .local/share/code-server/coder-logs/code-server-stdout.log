@@ -1,0 +1,156 @@
+[2025-05-11T23:20:38.099Z] info  code-server 4.99.4 47d6d3ada5aadef6d221f3d612401eb3dad9299e
+[2025-05-11T23:20:38.100Z] info  Using user-data-dir /home/aluno/.local/share/code-server
+[2025-05-11T23:20:38.107Z] info  Using config file /home/aluno/.config/code-server/config.yaml
+[2025-05-11T23:20:38.107Z] info  HTTP server listening on http://0.0.0.0:8080/
+[2025-05-11T23:20:38.107Z] info    - Authentication is disabled
+[2025-05-11T23:20:38.107Z] info    - Not serving HTTPS
+[2025-05-11T23:20:38.107Z] info  Session server listening on /home/aluno/.local/share/code-server/code-server-ipc.sock
+[23:22:23] 
+
+
+
+
+[23:22:23] Extension host agent started.
+[23:22:23] Started initializing default profile extensions in extensions installation folder. file:///home/aluno/.local/share/code-server/extensions
+[23:22:23] Completed initializing default profile extensions in extensions installation folder. file:///home/aluno/.local/share/code-server/extensions
+[23:22:26] [172.17.0.1][10607294][ManagementConnection] New connection established.
+[23:22:26] [172.17.0.1][f84adbcf][ExtensionHostConnection] New connection established.
+[23:22:26] [172.17.0.1][f84adbcf][ExtensionHostConnection] <55> Launched Extension Host Process.
+[23:23:23] [172.17.0.1][10607294][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[23:23:23] [172.17.0.1][f84adbcf][ExtensionHostConnection] <55> Extension Host Process exited with code: 0, signal: null.
+[23:23:24] [172.17.0.1][dbb4b05e][ManagementConnection] New connection established.
+[23:23:25] [172.17.0.1][a970cca5][ExtensionHostConnection] New connection established.
+[23:23:25] [172.17.0.1][a970cca5][ExtensionHostConnection] <162> Launched Extension Host Process.
+[23:43:54] Getting Manifest... esbenp.prettier-vscode
+[23:43:56] Installing extension: esbenp.prettier-vscode {
+  isMachineScoped: false,
+  installPreReleaseVersion: false,
+  pinned: false,
+  isApplicationScoped: false,
+  profileLocation: pr {
+    scheme: 'file',
+    authority: '',
+    path: '/home/aluno/.local/share/code-server/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///home/aluno/.local/share/code-server/extensions/extensions.json',
+    _fsPath: '/home/aluno/.local/share/code-server/extensions/extensions.json'
+  },
+  productVersion: { version: '1.99.3', date: '2025-04-24T19:29:01.118Z' }
+}
+[23:43:59] Extension signature verification is not done: esbenp.prettier-vscode
+[23:43:59] Extracted extension to file:///home/aluno/.local/share/code-server/extensions/esbenp.prettier-vscode-11.0.0-universal: esbenp.prettier-vscode
+[23:43:59] Renamed to /home/aluno/.local/share/code-server/extensions/esbenp.prettier-vscode-11.0.0-universal
+[23:43:59] Extension installed successfully: esbenp.prettier-vscode file:///home/aluno/.local/share/code-server/extensions/extensions.json
+[23:44:27] Getting Manifest... vscjava.vscode-maven
+[23:44:28] Installing extension: vscjava.vscode-maven {
+  isMachineScoped: false,
+  installPreReleaseVersion: false,
+  pinned: false,
+  isApplicationScoped: false,
+  profileLocation: pr {
+    scheme: 'file',
+    authority: '',
+    path: '/home/aluno/.local/share/code-server/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///home/aluno/.local/share/code-server/extensions/extensions.json',
+    _fsPath: '/home/aluno/.local/share/code-server/extensions/extensions.json'
+  },
+  productVersion: { version: '1.99.3', date: '2025-04-24T19:29:01.118Z' }
+}
+[23:44:36] Extension signature verification is not done: vscjava.vscode-maven
+[23:44:36] Extracted extension to file:///home/aluno/.local/share/code-server/extensions/vscjava.vscode-maven-0.44.0-universal: vscjava.vscode-maven
+[23:44:36] Renamed to /home/aluno/.local/share/code-server/extensions/vscjava.vscode-maven-0.44.0-universal
+[23:44:36] Extension installed successfully: vscjava.vscode-maven file:///home/aluno/.local/share/code-server/extensions/extensions.json
+[01:20:38] [172.17.0.1][dbb4b05e][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[01:20:38] [172.17.0.1][a970cca5][ExtensionHostConnection] <162> Extension Host Process exited with code: 0, signal: null.
+[2025-05-12T12:57:51.483Z] info  code-server 4.99.4 47d6d3ada5aadef6d221f3d612401eb3dad9299e
+[2025-05-12T12:57:51.489Z] info  Using user-data-dir /home/aluno/.local/share/code-server
+[2025-05-12T12:57:51.498Z] info  Using config file /home/aluno/.config/code-server/config.yaml
+[2025-05-12T12:57:51.498Z] info  HTTP server listening on http://0.0.0.0:8080/
+[2025-05-12T12:57:51.498Z] info    - Authentication is disabled
+[2025-05-12T12:57:51.498Z] info    - Not serving HTTPS
+[2025-05-12T12:57:51.498Z] info  Session server listening on /home/aluno/.local/share/code-server/code-server-ipc.sock
+[2025-05-12T13:44:30.863Z] info  code-server 4.99.4 47d6d3ada5aadef6d221f3d612401eb3dad9299e
+[2025-05-12T13:44:30.864Z] info  Using user-data-dir /home/aluno/.local/share/code-server
+[2025-05-12T13:44:30.870Z] info  Using config file /home/aluno/.config/code-server/config.yaml
+[2025-05-12T13:44:30.870Z] info  HTTP server listening on http://0.0.0.0:8080/
+[2025-05-12T13:44:30.870Z] info    - Authentication is disabled
+[2025-05-12T13:44:30.870Z] info    - Not serving HTTPS
+[2025-05-12T13:44:30.870Z] info  Session server listening on /home/aluno/.local/share/code-server/code-server-ipc.sock
+[2025-05-12T16:32:08.868Z] info  code-server 4.99.4 47d6d3ada5aadef6d221f3d612401eb3dad9299e
+[2025-05-12T16:32:08.870Z] info  Using user-data-dir /home/aluno/.local/share/code-server
+[2025-05-12T16:32:08.880Z] info  Using config file /home/aluno/.config/code-server/config.yaml
+[2025-05-12T16:32:08.880Z] info  HTTP server listening on http://0.0.0.0:8080/
+[2025-05-12T16:32:08.880Z] info    - Authentication is disabled
+[2025-05-12T16:32:08.880Z] info    - Not serving HTTPS
+[2025-05-12T16:32:08.880Z] info  Session server listening on /home/aluno/.local/share/code-server/code-server-ipc.sock
+[2025-05-12T16:46:42.960Z] info  code-server 4.99.4 47d6d3ada5aadef6d221f3d612401eb3dad9299e
+[2025-05-12T16:46:42.961Z] info  Using user-data-dir /home/aluno/.local/share/code-server
+[2025-05-12T16:46:42.974Z] info  Using config file /home/aluno/.config/code-server/config.yaml
+[2025-05-12T16:46:42.975Z] info  HTTP server listening on http://0.0.0.0:8080/
+[2025-05-12T16:46:42.975Z] info    - Authentication is disabled
+[2025-05-12T16:46:42.975Z] info    - Not serving HTTPS
+[2025-05-12T16:46:42.975Z] info  Session server listening on /home/aluno/.local/share/code-server/code-server-ipc.sock
+[16:48:52] 
+
+
+
+
+[16:48:52] Extension host agent started.
+[16:48:54] [172.17.0.1][bb446085][ManagementConnection] New connection established.
+[16:48:56] [172.17.0.1][958df143][ExtensionHostConnection] New connection established.
+[16:48:56] [172.17.0.1][958df143][ExtensionHostConnection] <53> Launched Extension Host Process.
+[2025-05-12T17:05:08.868Z] info  code-server 4.99.4 47d6d3ada5aadef6d221f3d612401eb3dad9299e
+[2025-05-12T17:05:08.876Z] info  Using user-data-dir /home/aluno/.local/share/code-server
+[2025-05-12T17:05:08.887Z] info  Using config file /home/aluno/.config/code-server/config.yaml
+[2025-05-12T17:05:08.887Z] info  HTTP server listening on http://0.0.0.0:8080/
+[2025-05-12T17:05:08.887Z] info    - Authentication is disabled
+[2025-05-12T17:05:08.887Z] info    - Not serving HTTPS
+[2025-05-12T17:05:08.887Z] info  Session server listening on /home/aluno/.local/share/code-server/code-server-ipc.sock
+[17:05:20] 
+
+
+
+
+[17:05:20] Extension host agent started.
+[17:05:24] [172.17.0.1][79180a65][ManagementConnection] New connection established.
+[17:05:25] [172.17.0.1][7b968d70][ExtensionHostConnection] New connection established.
+[17:05:25] [172.17.0.1][7b968d70][ExtensionHostConnection] <53> Launched Extension Host Process.
+[17:21:57] [172.17.0.1][79180a65][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[17:21:57] [172.17.0.1][7b968d70][ExtensionHostConnection] <53> Extension Host Process exited with code: 0, signal: null.
+[2025-05-13T13:12:06.797Z] info  code-server 4.99.4 47d6d3ada5aadef6d221f3d612401eb3dad9299e
+[2025-05-13T13:12:06.804Z] info  Using user-data-dir /home/aluno/.local/share/code-server
+[2025-05-13T13:12:06.812Z] info  Using config file /home/aluno/.config/code-server/config.yaml
+[2025-05-13T13:12:06.813Z] info  HTTP server listening on http://0.0.0.0:8080/
+[2025-05-13T13:12:06.813Z] info    - Authentication is disabled
+[2025-05-13T13:12:06.813Z] info    - Not serving HTTPS
+[2025-05-13T13:12:06.813Z] info  Session server listening on /home/aluno/.local/share/code-server/code-server-ipc.sock
+[13:13:11] 
+
+
+
+
+[13:13:11] Extension host agent started.
+[13:13:14] [172.17.0.1][7ffbc439][ManagementConnection] New connection established.
+[13:13:15] [172.17.0.1][fbac8de1][ExtensionHostConnection] New connection established.
+[13:13:15] [172.17.0.1][fbac8de1][ExtensionHostConnection] <63> Launched Extension Host Process.
+[13:14:46] [172.17.0.1][7ffbc439][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[13:14:46] [172.17.0.1][fbac8de1][ExtensionHostConnection] <63> Extension Host Process exited with code: 0, signal: null.
+[2025-05-13T13:26:10.682Z] info  code-server 4.99.4 47d6d3ada5aadef6d221f3d612401eb3dad9299e
+[2025-05-13T13:26:10.683Z] info  Using user-data-dir /home/aluno/.local/share/code-server
+[2025-05-13T13:26:10.689Z] info  Using config file /home/aluno/.config/code-server/config.yaml
+[2025-05-13T13:26:10.690Z] info  HTTP server listening on http://0.0.0.0:8080/
+[2025-05-13T13:26:10.690Z] info    - Authentication is disabled
+[2025-05-13T13:26:10.690Z] info    - Not serving HTTPS
+[2025-05-13T13:26:10.690Z] info  Session server listening on /home/aluno/.local/share/code-server/code-server-ipc.sock
+[13:26:18] 
+
+
+
+
+[13:26:18] Extension host agent started.
+[13:26:20] [172.17.0.1][c2382cb6][ManagementConnection] New connection established.
+[13:26:21] [172.17.0.1][90abfb37][ExtensionHostConnection] New connection established.
+[13:26:21] [172.17.0.1][90abfb37][ExtensionHostConnection] <53> Launched Extension Host Process.

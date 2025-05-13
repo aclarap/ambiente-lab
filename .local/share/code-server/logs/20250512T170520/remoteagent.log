@@ -1,0 +1,14 @@
+2025-05-12 17:05:20.513 [info] 
+
+
+
+
+2025-05-12 17:05:20.534 [info] Extension host agent started.
+2025-05-12 17:05:20.633 [error] [172.17.0.1][bb446085][ManagementConnection] Unknown reconnection token (never seen).
+2025-05-12 17:05:24.090 [info] [172.17.0.1][79180a65][ManagementConnection] New connection established.
+2025-05-12 17:05:25.421 [info] [172.17.0.1][7b968d70][ExtensionHostConnection] New connection established.
+2025-05-12 17:05:25.570 [info] [172.17.0.1][7b968d70][ExtensionHostConnection] <53> Launched Extension Host Process.
+2025-05-12 17:21:57.395 [info] [172.17.0.1][79180a65][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-05-12 17:21:57.644 [info] [172.17.0.1][7b968d70][ExtensionHostConnection] <53> Extension Host Process exited with code: 0, signal: null.
+2025-05-12 20:16:00.310 [warning] No ptyHost heartbeat after 6 seconds
+2025-05-13 09:40:29.889 [warning] No ptyHost heartbeat after 6 seconds
