@@ -20,11 +20,52 @@ Este ambiente foi criado para facilitar o uso de ferramentas essenciais de progr
 
 ## 🚀 Como iniciar o ambiente
 
-### 1. Clone o repositório (ou acesse os arquivos)
+### 1. Clone este repositório ou crie seu próprio repositório local
+
+### 🔁 Opção A — Clonar o repositório oficial do professor
+
+Abra o terminal e execute:
 
 ```bash
-git clone https://github.com/seuusuario/ambiente-lab.git
+git clone https://github.com/Engenharia-Mackenzie/ambiente-lab.git
 cd ambiente-lab
+```
+
+> Essa opção permite que você use o ambiente padrão criado pelo professor.
+
+---
+
+### 🛠 Opção B — Criar seu próprio repositório local a partir dos arquivos
+
+Caso deseje manter um repositório próprio (com commits, códigos e alterações suas), siga os passos abaixo **após clonar**:
+
+```bash
+# Inicialize o repositório local
+git init
+
+# Configure seu nome e e-mail (necessário apenas uma vez)
+git config --global user.name "Seu Nome"
+git config --global user.email "seu.email@exemplo.com"
+
+# Crie o branch principal
+git branch -M main
+
+# Adicione os arquivos ao controle de versão
+git add .
+
+# Faça seu primeiro commit
+git commit -m "Primeiro commit do meu ambiente local"
+
+# (Opcional) Se você já criou um repositório no GitHub, adicione o remoto:
+git remote add origin https://github.com/seuusuario/seu-repositorio.git
+
+# Envie os arquivos para o seu repositório remoto
+git push -u origin main
+```
+
+> 🔒 Se você estiver em um ambiente com volume montado (como `/home/aluno/projetos` via Docker), pode ser necessário marcar a pasta como segura:
+```bash
+git config --global --add safe.directory /home/aluno/projetos
 ```
 
 ### 2. Construa a imagem Docker
@@ -38,13 +79,13 @@ docker build -t ambiente-lab .
 Sem volume (uso apenas dentro do container):
 
 ```bash
-docker run -it -p 8080:8080 ambiente-lab
+docker run --rm --name lab-temporario -it -p 8080:8080 ambiente-lab
 ```
 
 Com volume (usa pasta do seu sistema para salvar os projetos):
 
 ```bash
-docker run -it -p 8080:8080 -v /c/Users/SeuNome/Documentos/meus-projetos:/home/aluno/projetos ambiente-lab
+docker run --rm --name lab-aluno -it -p 8080:8080 -v /c/Users/SeuNome/Documentos/meus-projetos:/home/aluno/projetos ambiente-lab
 ```
 
 > ⚠️ No Windows, use caminhos no formato `/c/Users/...` no comando acima.
