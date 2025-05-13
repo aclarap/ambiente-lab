@@ -1,3 +1,4 @@
+#  ##################################
 # 💻 Ambiente de Desenvolvimento em Docker para Engenharia da Computação
 
 Este ambiente foi criado para facilitar o uso de ferramentas essenciais de programação e sistemas sem a necessidade de instalações locais. Ele utiliza o `Docker` para oferecer um ambiente Linux completo com suporte a:
