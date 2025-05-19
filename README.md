@@ -1,4 +1,3 @@
-#  ##################################
 # 💻 Ambiente de Desenvolvimento em Docker para Engenharia da Computação
 
 Este ambiente foi criado para facilitar o uso de ferramentas essenciais de programação e sistemas sem a necessidade de instalações locais. Ele utiliza o `Docker` para oferecer um ambiente Linux completo com suporte a:
@@ -21,52 +20,11 @@ Este ambiente foi criado para facilitar o uso de ferramentas essenciais de progr
 
 ## 🚀 Como iniciar o ambiente
 
-### 1. Clone este repositório ou crie seu próprio repositório local
-
-### 🔁 Opção A — Clonar o repositório oficial do professor
-
-Abra o terminal e execute:
+### 1. Clone o repositório (ou acesse os arquivos)
 
 ```bash
 git clone https://github.com/Engenharia-Mackenzie/ambiente-lab.git
 cd ambiente-lab
-```
-
-> Essa opção permite que você use o ambiente padrão criado pelo professor.
-
----
-
-### 🛠 Opção B — Criar seu próprio repositório local a partir dos arquivos
-
-Caso deseje manter um repositório próprio (com commits, códigos e alterações suas), siga os passos abaixo **após clonar**:
-
-```bash
-# Inicialize o repositório local
-git init
-
-# Configure seu nome e e-mail (necessário apenas uma vez)
-git config --global user.name "Seu Nome"
-git config --global user.email "seu.email@exemplo.com"
-
-# Crie o branch principal
-git branch -M main
-
-# Adicione os arquivos ao controle de versão
-git add .
-
-# Faça seu primeiro commit
-git commit -m "Primeiro commit do meu ambiente local"
-
-# (Opcional) Se você já criou um repositório no GitHub, adicione o remoto:
-git remote add origin https://github.com/seuusuario/seu-repositorio.git
-
-# Envie os arquivos para o seu repositório remoto
-git push -u origin main
-```
-
-> 🔒 Se você estiver em um ambiente com volume montado (como `/home/aluno/projetos` via Docker), pode ser necessário marcar a pasta como segura:
-```bash
-git config --global --add safe.directory /home/aluno/projetos
 ```
 
 ### 2. Construa a imagem Docker
@@ -80,13 +38,13 @@ docker build -t ambiente-lab .
 Sem volume (uso apenas dentro do container):
 
 ```bash
-docker run --rm --name lab-temporario -it -p 8080:8080 ambiente-lab
+docker run -it -p 8080:8080 ambiente-lab
 ```
 
 Com volume (usa pasta do seu sistema para salvar os projetos):
 
 ```bash
-docker run --rm --name lab-aluno -it -p 8080:8080 -v /c/Users/SeuNome/Documentos/meus-projetos:/home/aluno/projetos ambiente-lab
+docker run -it -p 8080:8080 -v /c/Users/SeuNome/Documentos/meus-projetos:/home/aluno/projetos ambiente-lab
 ```
 
 > ⚠️ No Windows, use caminhos no formato `/c/Users/...` no comando acima.
@@ -172,14 +130,17 @@ g++ -o hello hello.cpp
 
 ---
 
-## 👥 Acesso múltiplo
+## ▶️ Executar com script no Windows
 
-Este ambiente foi projetado inicialmente para uso **individual**. Para uso por vários alunos simultaneamente, recomenda-se configurar:
+Se preferir, use o arquivo `start-lab-aluno.bat` incluído no repositório.  
+1. edite o arquivo e altere o caminho das variáveis HOST_DIR e DOCKER_PATH
+2. salve o arquivo e dê dois cliques nele para iniciar o ambiente com tudo configurado automaticamente.
 
-- Um container por aluno
-- Azure Lab Services, GitHub Codespaces ou infraestrutura de VMs com orquestração
+Esse script:
+- Inicia o container com nome fixo (`lab-aluno`)
+- Monta a pasta `C:\seudiretorio\lab-aluno` como volume persistente
+- Abre o ambiente acessível via `http://localhost:8080`
 
----
 
 ## 🛠 Manutenção
 
@@ -191,6 +152,63 @@ docker build -t ambiente-lab .
 
 ---
 
+## 🗄️ Uso do MySQL no terminal
+
+O ambiente já inclui o **MySQL Server** instalado e pré-configurado com os seguintes dados:
+
+| Usuário | Senha     | Observação                       |
+|--------|-----------|-----------------------------------|
+| root   | root123   | Acesso completo (administrador)   |
+| aluno  | senha123  | Usuário padrão para alunos        |
+| Banco  | labdb     | Banco criado automaticamente      |
+
+---
+
+### 🔑 Acessar o MySQL como aluno:
+
+```bash
+mysql -u aluno -p
+# senha: senha123
+```
+
+### 🔑 Acessar o MySQL como root:
+
+```bash
+sudo mysql -u root -p
+# senha: root123
+```
+
+---
+
+### 🔧 Comandos básicos no MySQL:
+
+```sql
+-- Ver bancos existentes
+SHOW DATABASES;
+
+-- Usar banco de dados
+USE labdb;
+
+-- Listar tabelas do banco
+SHOW TABLES;
+
+-- Criar tabela
+CREATE TABLE alunos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(100),
+  curso VARCHAR(100)
+);
+
+-- Inserir dados
+INSERT INTO alunos (nome, curso) VALUES ('Ana', 'Engenharia');
+
+-- Ver dados
+SELECT * FROM alunos;
+
+-- Sair
+EXIT;
+```
+
 ## 👨‍🏫 Desenvolvido para uso didático
 
 Este ambiente foi configurado para disciplinas de:
@@ -200,3 +218,6 @@ Este ambiente foi configurado para disciplinas de:
 - Estruturas de Dados
 
 Com foco na padronização e facilidade de acesso para os alunos.
+
+
+---
