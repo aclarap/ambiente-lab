@@ -6,6 +6,7 @@ Este ambiente foi criado para facilitar o uso de ferramentas essenciais de progr
 - Python 3
 - Java (JDK 17)
 - Git
+- Mysql
 - Terminal Linux completo (bash)
 - Nano, curl, wget, unzip, etc.
 
@@ -86,6 +87,9 @@ http://localhost:8080
 - **Sistema de arquivos:** navegue por `/home/aluno` (ou pela pasta montada).
 - **Git:** já instalado. Use terminal ou extensão gráfica do VSCode.
 - **Java, C e Python:** compilar e rodar direto no terminal.
+- **MySQL:** Use pelo terminal ou extensão gráfica do VSCode.
+
+
 
 ---
 
