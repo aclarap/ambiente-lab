@@ -51,6 +51,16 @@ docker run -it -p 8080:8080 -v /c/Users/SeuNome/Documentos/meus-projetos:/home/a
 > ⚠️ No Windows, use caminhos no formato `/c/Users/...` no comando acima.
 
 ---
+
+## 🌐 Verificação pós-build:
+```bash
+mvn -v     # Confirma Maven funcionando
+java -version  # Verifica Java 18
+python3     # Confirma Python
+mysql -u aluno -p  # Confirma acesso ao banco
+```
+---
+
 ## 🌐 Acessar o terminal do container (modo interativo)
 
 Se quiser usar o terminal Linux dentro do container de forma direta (fora do navegador), você pode executar:
