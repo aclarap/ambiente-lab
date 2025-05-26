@@ -46,6 +46,12 @@ RUN apt-get install -y python3-venv && \
     /home/aluno/venv/bin/pip install --upgrade pip
 RUN pip install flask fastapi uvicorn        
 
+# Instala Node.js LTS (v18, compatível com Next.js)
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
+    apt-get install -y nodejs && \
+    npm install -g npm
+
+
 # Copia o script de inicialização
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
